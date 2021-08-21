@@ -1,0 +1,450 @@
+
+@import url('../css/fonts.css');
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #862424da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+
+}
+
+
+/* ---------------- Nav---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Abel);
+    color: var(--text-light);
+}
+
+span{
+    font-family: var(--Abel);
+
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Abel);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Abel);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Abel);
+    cursor: pointer;
+}
+
+/* ------x------- Global Classes -------x-------*/
+/* ------x------- Nav-------x-------*/
+.nav {
+    background: white;
+    padding: 0 2rem;    
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.nav .nav-menu{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .nav-brand a{
+    font-size: 30px;
+    font-family: var(--Abel);
+    display: block;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 15px 10px;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 25px;
+
+}
+
+.nav .social i {
+    padding: 20px 14px;
+}
+
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+.header-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+#header-menu-bar{
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.nav-link_active{
+    color: #ff0000;
+}
+
+.nav-items  li a:hover{
+    color: yellow
+}
+
+
+/* ------x------- Nav-------x-------*/
+
+/* ------x------- .main-------x-------*/
+.main .site-title{
+    /* because of tag section SO divide div exactly */
+    background: url('../assets/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.main .site-title h1,h3{
+    /* do space between h1,h3 zoom out */
+    margin: .4rem;
+}
+
+/* START BLOG */
+
+.blog{
+    padding-bottom: 50px;
+}
+
+.blog-container-post{
+    padding-top: 70px;
+    padding-left: 40px;
+}
+
+.blog-container-post_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+.blog-container-post_content img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-container-post_content button{
+    background-image: var(--sky);
+}
+
+.blog-container-post_content span{
+    display: block;
+}
+
+.blog-container-post_content h3,button,span{
+    margin-top: 20px;
+} 
+
+.owl-nav{
+    display: none;
+}
+/* END BLOCK */
+
+
+/* START  CONTAINER*/
+
+    /* side post */
+.container .container-site{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.container-site-posts-content{
+    width: 100%; 
+    margin-bottom: 1rem;
+}
+
+.container-site-posts-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+.container-site-posts-content > .post-image .post-info{
+    background: var(--sky);
+    padding: 1rem;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: 0%;
+    left:30%;
+}
+
+.container-site-posts-content > .post-title a{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.container-site-posts-content > .post-image .post-info span{
+    padding-right: .6rem;
+}
+
+.container .post-content .post-image img {
+    width: 100%;
+    transition: all 1s ease;
+    object-fit: cover;
+
+}
+
+.container-site-posts-content > .post-image .img:hover{
+    transform: scale(1.2);
+}
+
+.container-site-posts-content > .post-image > div{
+    overflow: hidden;
+}
+
+.container-site-posts_pagination{
+    justify-content: center;
+    color: var(--text-gray);
+    margin: 3rem 0;
+}
+
+.container-site-posts_pagination a{
+    padding: .6rem .9rem;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    font-family: 'Times New Roman', 'Times', 'serif';
+}
+
+.container-site-posts_pagination .pages{
+    background: var(--text-gray);
+    color: var(--white);
+}
+    /* end side post */
+
+    /* sidebar */
+    /* category */
+.sidebar{
+    padding: 1rem;
+}
+
+.sidebar-category-list{
+    font-family: var(--Abel);   
+    margin: 1rem 0 4rem 0;
+}
+
+.sidebar-category-list .list-items{
+    background: var(--sky);
+    padding: .4rem 1rem;
+    margin: .8rem 0;
+    border-radius: 3rem;
+    width: 70%; 
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.sidebar-category-list .list-items a{
+    color:  black;
+}
+
+/* ------x------- popular post-------x-------*/
+.sidebar-popular-post .post-info{
+    padding: 0rem 0.2rem !important;
+    display: inline;
+    right:0;
+    top:10rem;
+    bottom: 0rem !important;
+    margin: 0 auto !important;
+    border-radius: 0rem !important;
+    background: white !important;
+    color: black;
+    
+}
+
+.sidebar-popular-post .post-content >  .post-title{
+    padding: 0rem 2rem 2rem 2rem !important;
+}
+
+
+/* ------x------- popular tag-------x-------*/
+.sidebar-popular-tags .tags{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sidebar-popular-tags .tag{
+    background: var(--sky);
+    padding: .8rem 1.5rem;
+    margin: 1rem;
+    border-radius: 3rem;
+}
+
+
+/* ------x-------  DIV MAIN END-------x-------*/
+
+/* ------x------- Footer-------x-------*/
+.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    padding: 20px 20px;
+}
+
+.footer-container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 20px;
+}
+
+.footer-container h2{
+    color: white;
+    font-size: xx-large;
+}
+
+.footer-container p{
+    font-size: larger;
+}
+
+.footer-container_newsletter .form-element{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container_newsletter .form-element input{
+    width: 70%; 
+    padding: 10px;
+}
+
+.footer-container_newsletter .form-element span{
+    background: var(--sky);
+    padding: 8px;
+    margin-left: 3px;
+    margin-top: 0;
+}
+
+
+.footer-container_follow div i{
+    font-size: 1.6rem;
+    padding: 0 .6rem;
+    color: white;    
+}
+
+.footer-copyrights{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-copyrights h4 span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-move-up{
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.scrolltop-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer-move-up a{
+    color: teal;
+    transition: all 1s ease;
+    font-size: 25px;
+    padding: 12px 15px;
+    border-radius: 50px;
+    background: yellow;
+}
+
+.footer-move-up a:hover{
+   color: white;
+   opacity: .8;
+   cursor:pointer;
+}
+.footer .follow div i:hover{
+    opacity: .7;
+}
+
+/* ------x------- Footer-------x-------*/
+

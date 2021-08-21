@@ -1,0 +1,126 @@
+
+/* ------x------- <1023-------x-------*/
+@media only screen and (max-width:1023px) {
+
+    .nav-menu {
+        padding: 10px;
+    }
+
+    #header-menu-bar{
+        display: block;
+    }
+  
+    .header-center .nav-toggle{
+        top: 40%;
+        opacity: 1;
+    }
+
+    .header-navbar{
+        position: fixed;
+        top: -200rem; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 0 100vh rgba(0,0,0,.3);
+        z-index: 100;
+        opacity: 0;
+    }
+
+    .header-navbar ul{
+        flex-flow: column;
+        background: linear-gradient(rgb(191, 255, 0), rgb(43, 134, 226));
+        border: 1px solid #fff;
+        box-shadow: 0 .3rem .5rem #000;
+        padding: 30px 0;
+        width: 300px;
+    }
+
+    .header-navbar ul li{
+        width: 100%;        
+        text-align: center;
+    }
+
+    .header-navbar ul li a{
+        font-size: 30px;
+        display: block;
+        line-height: 35px;
+    }
+
+    .nav .nav-items .nav-link {
+        padding: 10px 0px;        
+    }
+
+   
+
+    .container-site-posts-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1rem !important;
+        border-radius: 0% !important;
+    }
+
+    .sidebar-popular-post .post-info{
+        display: none !important;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav .social  {
+        display: none;
+    }
+
+   
+
+}
+
+/* ------x------- <1023-------x-------*/
+/* ------x------- <739-------x-------*/
+@media only screen and (max-width:739px) {
+    
+
+    .main .container-site{
+        grid-template-columns: 100%;
+    }
+
+    .footer-move-up{ 
+        right: 60px;
+        bottom: 60px;
+    }
+
+}
+/* ------x------- <750-------x-------*/
+/* ------x------- <520-------x-------*/
+@media only screen and (max-width: 520px){
+
+    .container-site-posts-content > .post-image .post-info{
+        display: none;
+    }
+
+    .footer-container > div{
+        padding:  15px ;
+    }
+
+    .footer-copyrights{
+        padding: 0 30px;
+        text-align: center;
+    }
+
+  
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-move-up{ 
+        right: 40px;
+        bottom: 90px;
+    }
+
+    .footer-move-up span{        
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 50%;        
+    }
+
+}
+
+/* ------x------- <520-------x-------*/
